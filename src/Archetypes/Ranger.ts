@@ -3,10 +3,12 @@ import Archetype from './Archetype';
 
 export default class Ranger extends Archetype {
   private _stamina: number;
+  private _energyType: EnergyType;
   
-  constructor(name: string, stamina: number) {
-    super(name, 'stamina');
-    this._stamina = stamina;
+  constructor(name: string) {
+    super(name);
+    this._stamina = 0;
+    this._energyType = 'stamina';
     Ranger.incrementInstanceCounter();
   }
 
