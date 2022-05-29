@@ -1,7 +1,7 @@
 abstract class Race {
   private _name: string;
   private _dexterity: number;
-  public static _instancesCount = 0;
+  private static _instancesCount = 0;
 
   constructor(name: string, dexterity: number) {
     this._name = name;
